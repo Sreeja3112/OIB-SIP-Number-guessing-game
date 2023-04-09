@@ -51,7 +51,7 @@ class Game {
     break;
     case 5:
     System.out.println("Your score is 60");
-    break;
+    break; 
     case 6:
     System.out.println("Your score is 50");
     break;
@@ -84,7 +84,7 @@ class Game {
     System.out.println("Too low");
    }
    else {
-    System.out.println("Little low");
+    System.out.println("A Bit low");
    }
   }
   return false;
