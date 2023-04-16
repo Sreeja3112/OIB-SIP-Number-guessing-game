@@ -15,7 +15,7 @@ class Game {
  }
 	
 	
- // method to take user guesses
+ 
  public boolean takeUserInput() {
   if ( noOfGuesses < 10 ) {
    System.out.print("Guess the number : ");
@@ -121,7 +121,7 @@ public class GuessTheNumber {
  
  public static void main(String[] args) {
   
-  // input for start the game
+  
   System.out.println("1. Start the Game \n2. Exit");
   System.out.print("Enter your choice : ");
   int choice = takeIntegerInput(2);
