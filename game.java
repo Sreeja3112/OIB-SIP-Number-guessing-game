@@ -15,8 +15,8 @@ class Game {
  }
 	
 	
-
- public boolean userInput() {
+ // method to take user guesses
+ public boolean takeUserInput() {
   if ( noOfGuesses < 10 ) {
    System.out.print("Guess the number : ");
    this.userInput = GuessTheNumber.takeIntegerInput(100);
@@ -31,7 +31,7 @@ class Game {
 	
 	
  
- public boolean correctGuess() {
+ public boolean isCorrectGuess() {
   
   if ( systemInput == userInput ) {
    System.out.println("Congratulations, you guess the number " + systemInput +
@@ -51,7 +51,7 @@ class Game {
     break;
     case 5:
     System.out.println("Your score is 60");
-    break; 
+    break;
     case 6:
     System.out.println("Your score is 50");
     break;
@@ -84,7 +84,7 @@ class Game {
     System.out.println("Too low");
    }
    else {
-    System.out.println("A Bit low");
+    System.out.println("Little low");
    }
   }
   return false;
@@ -94,7 +94,7 @@ class Game {
 
 public class GuessTheNumber {
 	
- 
+
  public static int takeIntegerInput(int limit) {
   int input = 0;
   boolean flag = false;
@@ -118,7 +118,7 @@ public class GuessTheNumber {
   return input;
  }
 	
- // main method
+ 
  public static void main(String[] args) {
   
   // input for start the game
